@@ -9,5 +9,5 @@
 
 <Router>
   <Route path="/" component={Home} />
-  <Route path="/portforlio" component={Portfolio} />
+  <Route path="/portfolio" component={Portfolio} />
 </Router>

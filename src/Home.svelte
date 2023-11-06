@@ -1,5 +1,5 @@
 <script lang="ts">
-
+  import { Link } from 'svelte-routing';
 </script>
 
 <div>
@@ -13,7 +13,7 @@
       <div class="profile-info">
         <p style="float: left;">&nbsp &nbsp John Doe</p>
         <p style="float: right">14 yrs xp &nbsp</p>
-        <a  href="/portfolio" style="float: left;">See portfolio</a>
+        <a href="/portfolio?name=john_doe">See Portfolio</a>
       </div>
     </div>
 
@@ -25,7 +25,7 @@
       <div class="profile-info">
         <p style="float: left;">&nbsp &nbsp James Roe</p>
         <p style="float: right">8 yrs xp &nbsp</p>
-        <a  href="#james_doe" style="float: left;">See portfolio</a>
+        <a href="/portfolio?name=james_roe">See Portfolio</a>
       </div>
 
     </div>
@@ -38,7 +38,7 @@
       <div class="profile-info">
         <p style="float: left;">&nbsp &nbsp Jane Poe</p>
         <p style="float: right">8 yrs xp &nbsp</p>
-        <a  href="#john_doe" style="float: left;">See portfolio</a>
+        <a href="/portfolio?name=jane_poe">See Portfolio</a>
       </div>
 
     </div>
@@ -53,7 +53,7 @@
       <div class="profile-info">
         <p style="float: left;">&nbsp &nbsp Anne Cox</p>
         <p style="float: right">5 yrs xp &nbsp</p><br/>
-        <a href="#anne_cox" style="float: left;">See portfolio</a>
+        <a href="/portfolio?name=anne_cox">See Portfolio</a>
       </div>
 
     </div>
@@ -66,7 +66,7 @@
       <div class="profile-info">
         <p style="float: left;">&nbsp &nbsp Ben Fox</p>
         <p style="float: right">7 yrs xp &nbsp</p>
-        <a  href="#ben_fox" style="float: left;">See portfolio</a>
+        <a href="/portfolio?name=ben_fox">See Portfolio</a>
       </div>
     </div>
 
@@ -78,7 +78,7 @@
       <div class="profile-info">
         <p style="float: left;">&nbsp &nbsp Liz Day</p>
         <p style="float: right">3 yrs xp &nbsp</p>
-        <a  href="#liz_day" style="float: left;">See portfolio</a>
+        <a href="/portfolio?name=liz_day">See Portfolio</a>
       </div>
     </div>
   </div>
@@ -125,6 +125,7 @@
 }
 
 .profile-info a {
+    float: left;
     box-sizing: border-box;
     margin-left: 0.95em;
     margin-bottom: 0.5em;
