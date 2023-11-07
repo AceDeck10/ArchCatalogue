@@ -33,7 +33,7 @@ onMount(() => {
     <h2>&nbsp &nbsp &nbsp &nbsp &nbsp Images:</h2>
     <ul>
         {#each images as image}
-        <li><img src={`public/img/${image}`} alt={image} /></li>
+        <li><img src={`/img/${image}`} alt={image} /></li>
         {/each}
     </ul>
     {:else}
