@@ -2,9 +2,6 @@
   import { Router, Route } from 'svelte-routing';
   import Home from './Home.svelte';
   import Portfolio from './Portfolio.svelte';
-  import Footer from './Footer.svelte';
-
-
 </script>
 
 
