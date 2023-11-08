@@ -12,7 +12,3 @@
   <Route path="/" component={Home} />
   <Route path="/portfolio" component={Portfolio} />
 </Router>
-
-<div>
-  <Footer />
-</div>
