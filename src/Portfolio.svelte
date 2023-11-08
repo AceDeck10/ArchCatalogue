@@ -30,10 +30,10 @@ onMount(() => {
     </div>
 
     {#if images.length > 0}
-    <h2>&nbsp &nbsp &nbsp &nbsp &nbsp Images:</h2>
+    <h2>&nbsp &nbsp &nbsp &nbsp Images:</h2>
     <ul>
         {#each images as image}
-        <li><img src={`/img/${image}`} alt={image} /></li>
+        <li><img src={`/img/${image}`} alt={image} /></li><br />
         {/each}
     </ul>
     {:else}
@@ -58,5 +58,17 @@ onMount(() => {
   .heading a:hover {
     color: darkgrey;
   }
-    
+
+  img {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }   
 </style>
