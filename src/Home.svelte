@@ -139,6 +139,17 @@
     color: darkgrey;
 }
 
+@media (prefers-color-scheme: light) {
+  .profile-card {
+    border: 1px solid black;
+  }
+
+  .profile-info a {
+    color: black;
+  }
+  
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .page-content-top {
